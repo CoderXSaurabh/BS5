@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<style> 
+		*{
+            background-color: black;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            text-decoration: dashed;
+        }
+		.container { 
+            margin-top: 20px;
+            
+			background-color: rgb(192, 192, 192); 
+			width: 80%; 
+			border-radius: 15px; 
+		} 
+        
+		.bar { 
+			background-image: repeating-linear-gradient(45deg,skyblue,blue 7%,skyblue 12%);
+            color: white; 
+			padding: 1%; 
+			text-align: right; 
+			font-size: 20px; 
+			border-radius: 15px; 
+            
+		} 
+        @keyframes bardis {
+            
+            from{
+                width: 0%;
+            }to{
+                width: 80%;
+            }
+        }
+        @keyframes bardis1 {
+            from{
+                width: 0%;
+            }to{
+                width: 60%;
+            }
+        }
+		.bar1 { 
+            background-image: repeating-linear-gradient(45deg,red,blue 7%,skyblue 12%);
+			width: 80%; 
+            animation: bardis 5s linear forwards;
+		} 
+
+		.bar2 { 
+			width: 60%; 
+            animation: bardis1 5s linear forwards;
+            animation-delay: 5s;
+		} 
+	</style> 
+</head> 
+
+<body> 
+    <h1>BAR GRAPH DESIGN USING HTML AND CSS</h1>
+	<div class="container"> 
+		<div class="bar bar1">80%</div> 
+	</div> 
+
+ 
+	<div class="container"> 
+		<div class="bar bar2">60%</div> 
+	</div> 
+</body> 
+
+</html>
