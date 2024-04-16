@@ -20,7 +20,7 @@
 		} 
         
 		.bar { 
-			background-image: repeating-linear-gradient(45deg,skyblue,blue 7%,skyblue 12%);
+			background-image: repeating-linear-gradient(45deg,orange,blue 7%,red 12%);
             color: white; 
 			padding: 1%; 
 			text-align: right; 
@@ -43,8 +43,16 @@
                 width: 60%;
             }
         }
+
+        @keyframes bardis2 {
+            from{
+                width: 0%;
+            }to{
+                width: 70%;
+            }
+        }
 		.bar1 { 
-            background-image: repeating-linear-gradient(45deg,red,blue 7%,skyblue 12%);
+            background-image: repeating-linear-gradient(45deg,red,green 7%,yellow 12%);
 			width: 80%; 
             animation: bardis 5s linear forwards;
 		} 
@@ -53,6 +61,12 @@
 			width: 60%; 
             animation: bardis1 5s linear forwards;
             animation-delay: 5s;
+		}
+
+		.bar3 { 
+			width: 70%; 
+            animation: bardis2 5s linear forwards;
+            animation-delay: 10s;
 		} 
 	</style> 
 </head> 
@@ -66,6 +80,10 @@
  
 	<div class="container"> 
 		<div class="bar bar2">60%</div> 
+	</div> 
+	
+    <div class="container"> 
+		<div class="bar bar3">70%</div> 
 	</div> 
 </body> 
 
